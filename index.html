@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="js/app.js"></script>
+    <meta charset="utf-8">
+    <title>Football Legends Past and Present</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="club" class="primary">Club</label>
+          <input type="text" id="club" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="classification" class="primary">Classification</label>
+          <select id="classification">
+            <option value="" disabled selected></option>
+            <option value="Player">Player</option>
+            <option value="Manager">Manager</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+      <input type="reset" value="reset">
+    </form>
+
+    <h1>Football Legends Past and Present</h1>
+    <ul id="football-legends"></ul>
+  </body>
+</html>
